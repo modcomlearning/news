@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which Category"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+           <!-- First Row-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp">
+               <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="8dp"
+                   app:cardPreventCornerOverlap="true"
+                   app:cardUseCompatPadding="true"
+                   app:cardCornerRadius="18dp"
+                   android:layout_weight="1">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="115dp"
+                           android:src="@drawable/ic_dashboard_black_24dp"
+                           android:padding="10dp"/>
+
+                       <com.google.android.material.textview.MaterialTextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Horror"
+                           android:layout_marginTop="5dp"
+                           android:textSize="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>
+               </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+               <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="8dp"
+                   app:cardPreventCornerOverlap="true"
+                   app:cardUseCompatPadding="true"
+                   app:cardCornerRadius="18dp"
+                   android:layout_weight="1">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="115dp"
+                           android:src="@drawable/ic_notifications_black_24dp"
+                           android:padding="10dp"/>
+
+                       <com.google.android.material.textview.MaterialTextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Comedy"
+                           android:layout_marginTop="5dp"
+                           android:textSize="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>
+               </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+           </LinearLayout>
+
+           <!--  Second row -->
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="18dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:src="@drawable/ic_dashboard_black_24dp"
+                        android:padding="10dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Horror"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="18dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:src="@drawable/ic_dashboard_black_24dp"
+                        android:padding="10dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Horror"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+</LinearLayout>

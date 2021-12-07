@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FirstFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.circularreveal.CircularRevealLinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="200dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@drawable/header"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_height="90dp">
+            </View>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:text="@string/laboratory_tests"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/calibri"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black_faint"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:text="(Use this or The one Below)"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/calibri"
+                android:layout_marginStart="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/black_faint"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" />
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16dp"
+                app:elevation="10dp"
+                android:id="@+id/layoutvitamin"
+                android:backgroundTint="@color/card_background"
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="wrap_content">
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:padding="10dp"
+                        android:src="@drawable/bloodtest"
+                        android:scaleType="fitCenter"
+                        android:layout_height="60dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="VITAMIN C"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="KSH 13700"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="15dp"
+                            android:gravity="start"
+                            android:layout_marginBottom="4dp"
+                            android:maxLines="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="15dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16dp"
+                app:elevation="10dp"
+                android:backgroundTint="@color/card_background"
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="wrap_content">
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:padding="10dp"
+                        android:src="@drawable/pharmacy"
+                        android:scaleType="fitCenter"
+                        android:layout_height="60dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="VITAMIN B2"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="KSH 2700"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="15dp"
+                            android:gravity="start"
+                            android:layout_marginBottom="4dp"
+                            android:maxLines="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="15dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16dp"
+                app:elevation="10dp"
+                android:backgroundTint="@color/card_background"
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="wrap_content">
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:padding="10dp"
+                        android:src="@drawable/consulting"
+                        android:scaleType="fitCenter"
+                        android:layout_height="60dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="URINE ROUTINE &amp; CULTURE"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="KSH 1900"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="15dp"
+                            android:gravity="start"
+                            android:layout_marginBottom="4dp"
+                            android:maxLines="4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="15dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:text="(Or use this)"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/calibri"
+                android:layout_marginStart="20dp"
+                android:textSize="17sp"
+                android:textColor="@color/black_faint"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" />
+
+            <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                app:elevation="7dp"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                    app:srcCompat="@drawable/pharmacy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="STOOL OCCULT BLOOD"
+
+                        android:gravity="start"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tableImg"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="KSH 5600"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tableImg"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                        android:layout_marginLeft="20dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#B5B3B3"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+            </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+            <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                app:elevation="7dp"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                    app:srcCompat="@drawable/consulting" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="start"
+
+                        android:text="SODIUM, SERUM"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tableImg"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="KSH 7800"
+                        android:textSize="12sp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tableImg"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                        android:layout_marginLeft="20dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#B5B3B3"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+            </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+        </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
